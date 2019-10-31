@@ -8,7 +8,7 @@ gem 'rails', '~> 5.2.3'
 gem 'bcrypt',         '3.1.12'
 gem 'bootstrap-sass', '3.3.7'
 # Use Puma as the app server
-gem 'puma', '~> 3.11'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -67,6 +67,8 @@ end
 
 group :production do
   gem 'pg', '0.20.0'
+  gem 'rails_12factor'
+  gem 'puma', '~> 3.11' 
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
